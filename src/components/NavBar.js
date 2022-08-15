@@ -38,6 +38,13 @@ function NavBar() {
       >
         Apods
       </NavLink>
+      <NavLink
+        style={style}
+        to="/apod"
+      >
+        Apod
+      </NavLink>
+
     </nav>
   );
 }

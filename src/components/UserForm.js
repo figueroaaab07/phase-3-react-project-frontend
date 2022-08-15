@@ -34,19 +34,21 @@ function UserForm( {addUser} ) {
   }
 
   return (
-    <form>
-      <label>First Name</label>
-      <input className="user_name" type="text" value={user.first_name} name="first_name" onChange={handleChange} />
-      <label>    Last Name</label>
-      <input className="user_name" type="text" value={user.last_name} name="last_name" onChange={handleChange} /><br></br>
-      <label>Date of Birth</label>
-      <Calendar
-        onChange={setDate}
-        value={date}
-        maxDate={new Date()}
-       />
-      <button className="button-primary" type="submit" onClick={handleSubmit} >Add user</button>
-    </form>
+    <div className="form">
+      <form>
+        <label>First Name</label>
+        <input className="user_name" type="text" value={user.first_name} name="first_name" onChange={handleChange} /><br></br>
+        <label>Last Name</label>
+        <input className="user_name" type="text" value={user.last_name} name="last_name" onChange={handleChange} /><br></br>
+        <label>Date of Birth</label>
+        <Calendar
+          onChange={setDate}
+          value={date}
+          maxDate={new Date()}
+        />
+        <button className="button-primary" type="submit" onClick={handleSubmit} >Add user</button>
+      </form>
+    </div>
   )
 }
 

@@ -1,61 +1,16 @@
 import React from "react";
+import image from "/home/figue/Development/code/phase-3/phase-3-project-3/phase-3-react-project-frontend/src/images/hs-2015-01m16pillarshst1.jpg"
 
 function About() {
   return (
-    <div>
-      <p>There's nothing here yet</p>
-    </div>
+    <>
+      <div style={{ backgroundImage:`url(${image})`, backgroundRepeat:"no-repeat", backgroundSize:"contain", maxWidth:"100%", height:720, backgroundPosition:"top"}}>
+        <p style={{ color:"white", width:"50%", marginRight:"auto", marginLeft:"auto" }}>Astronomy Picture of the Day is a website provided by NASA and Michigan Technological University. According to the website, "Each day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer." Wikipedia
+Date launched: June 16, 1995
+Available in: English (primary)</p> 
+      </div>
+    </>
   );
 }
 
 export default About;
-// function About() {
-//   const sojourner = require('./images/sojourner.png'); // with require
-//   const spirit_opportunity = require('./images/spirit-opportunity.png'); // with require
-//   const curiosity = require('./images/curiosity.png'); // with require
-//   const perseverance = require('./images/perseverance.png'); // with require
-//   const cameras = require('./images/rover-cameras.png'); // with require
-//   const perseverance_cam_desc = require('./images/perseverance-cameras.jpg'); // with require
-//   const curiosity_cam = require('./images/curiositycameras2.jpg'); // with require
-//   const perseverance_cam = require('./images/mars_2020_cameras_labeled_web-full2.jpg'); // with require
-//   // const landing_cam = require('./images/EDLCam2-web.jpg'); // with require
-
-//   return (
-//     <>
-//       <h2>Rover Cameras</h2>
-//       <h3>(Images credit: NASA)</h3>
-//       <div className="row">
-//         <div className="column-rover-cameras">
-//           <img id="rover-cameras" alt="Rover Cameras" src={cameras} width="100%"/> 
-//         </div>
-//         <div className="column-rover-cameras">
-//           <img id="curiosity-cameras" alt="Curiosity Cameras" src={curiosity_cam} width="100%"/> 
-//         </div>
-//         <div className="column-rover-cameras">
-//           <img id="perseverance-cameras-desc" alt="Perseverance Cameras Desc" src={perseverance_cam_desc} height="80%" width="100%"/> 
-//         </div>
-//         <div className="column-rover-cameras">
-//           <img id="perseverance-cameras" alt="Perseverance Cameras" src={perseverance_cam} width="100%"/> 
-//         </div>
-//       </div>
-//       <h2>Rover Misions</h2>
-//       <h3>(Images credit: NASA)</h3>
-//       <div className="row">
-//         <div className="column">
-//           <img id="sojourner" alt="Mars Rover" src={sojourner} width="100%"/> 
-//         </div>
-//         <div className="column">
-//           <img id="spirit-opportunity" alt="Mars Rover" src={spirit_opportunity} width="100%"/> 
-//         </div>
-//         <div className="column">
-//           <img id="curiosity" alt="Mars Rover" src={curiosity} width="100%"/> 
-//         </div>
-//         <div className="column">
-//           <img id="perseverance" alt="Mars Rover" src={perseverance} width="100%"/> 
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default About;

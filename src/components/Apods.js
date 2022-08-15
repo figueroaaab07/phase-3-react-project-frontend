@@ -1,11 +1,16 @@
 import React from "react";
-import Apod from "./Apod";
+import ApodImage from "./ApodImage";
 
-function Apods({ apods }) {
+function Apods({ apods, user, imageClick }) {
   return (
-    <div className="row">
-      {(apods?.map(apod => <Apod key={apod.id} apod={apod} />))}
-    </div>
+    user && (
+      <>
+        <h2>{user.first_name + " " + user.last_name}</h2>
+        <div className="row">
+          {(apods?.map(apod => <ApodImage key={apod.id} apod={apod} imageClick={imageClick} />))}
+        </div>
+      </>
+    )
   )
 }
 

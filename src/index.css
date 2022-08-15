@@ -42,6 +42,10 @@ h2 {
   justify-content: center;
 }
 
+.form {
+  text-align: center;
+}
+
 .datebar input {
   width: 90%;
   font-size: 1rem;

@@ -21,7 +21,7 @@ function UserTable( {users, selectUser, deleteUser} ) {
                 <td>{first_name + " " + last_name}</td>
                 <td>{birth_date}</td>
                 <td>
-                  <button onClick={() => selectUser(id)}>Select</button>
+                  <button onClick={() => selectUser(user)}>Select</button>
                 </td>
                 <td>
                   <button onClick={() => deleteUser(id)}>Delete</button>
